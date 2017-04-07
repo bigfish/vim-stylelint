@@ -1,6 +1,4 @@
 "compiler to call stylelint on css file
-
-echom 'hi'
 let s:stylelint_server = expand('<sfile>:p:h') . '/../bin/stylelint-server.js'
 
 if exists('current_compiler')
@@ -138,7 +136,6 @@ endfunction
 
 function! StyleLint2()
 
-    echom 'StyleLint2()'
     "connect if necessary
     if !exists('g:stylelint_connected') || !g:stylelint_connected
 
